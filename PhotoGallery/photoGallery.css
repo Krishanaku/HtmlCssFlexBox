@@ -1,0 +1,43 @@
+*{
+    border: 0%;
+    margin: 0%;
+}
+
+.headContent
+{
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* .container
+{
+    
+    border: 1px solid black;
+    height: auto;
+    width: auto;
+    background-color: lightblue;
+    
+    align-items: center;
+    justify-content: center;
+    
+} */
+.images
+{
+    display: flex;
+    flex-direction: row;
+    border: 2px solid black;
+
+}
+
+
+img{
+    width: 250px;
+    height: 250px;
+    padding: 5px;
+    border-radius: 5%;
+    
+}
+

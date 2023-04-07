@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="payment.css">
+    <title>From</title>
+  </head>
+  <body>
+    <div class="container">
+    <form action="" method="get">
+      <h1 class="main_heading">Payment From</h1>
+      <hr />
+      <p>Requied field *</p>
+      <h2>User Information</h2>
+      <p>Name *: <input type="text" name="name"  placeholder="Enter Your name" required /></p>
+      <fieldset>
+        <legend>Gender *</legend>
+        <p>
+          Male : <input type="radio" name="gender" id="male" />
+          <!-- In radio button name is same than work perfect i u not give name same than not work perfect -->
+          Female : <input type="radio" name="gender" id="female" />
+        </p>
+      </fieldset>
+      <p>
+        Address *:
+        <textarea placeholder="Enter Your Address" name="address" id="address" cols="100" rows="8"></textarea>
+      </p>
+      <p>Email *: 
+        <input type="email" name="email" id="email" placeholder="Enter Your email" required /></p>
+      <p>
+        Pincode *: 
+        <input type="number" name="pincode" id="pincode" placeholder="Enter Your pincode" required />
+      </p>
+      <hr />
+      <h2>Payment Infromation</h2>
+      <p>
+        Card type *:
+        <select name="card_type" id="card_type"  required>
+          <option value="">--Select a card Type--</option>
+          <!-- Value is empty when select option is working perfect because without card type select go to database -->
+          <option value="Visa">Visa</option>
+          <option value="Rupay">Rupay</option>
+          <option value="MasterCard">MasterCard</option>
+        </select>
+      </p>
+      <p>
+        Card Number *:
+        <input type="number" name="card_number" id="card_number"  placeholder="1111-2222-3333-4444" required />
+      </p>
+      <p>
+        Expiration Date *:
+        <input type="date" name="exp_date" id="exp_date" placeholder="dd/mm/yyyy" required />
+      </p>
+      <p>CVV *: <input type="password" name="cvv" id="cvv" placeholder="123" required /></p>
+      <input type="submit" value="Pay Now" />
+    </form>
+    </div>
+  </body>
+</html>
